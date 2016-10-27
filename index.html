@@ -11,11 +11,18 @@
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 <body>
-  <section>
-    <h2 class="text-center text-danger">Current temperature: <span id = 'current-temperature'></span></h2>
+  <section class = 'text-center'>
+    <h2 class="text-danger">Current temperature: <span id = 'current-temperature'></span></h2>
+    <select class="text-primary" id="current-city">
+      <option value ="london">London</option>
+      <option value ="newyork">New York</option>
+      <option value ="paris">Paris</option>
+      <option value ="tokyo">Tokyo</option>
+      <option value ="florence">Florence</option>
+    </select>
     <h1 class="text-center text-danger" id="temperature"></h1>
     <p class="text-center text-danger">
-      <button class="btn btn-success" id="temperature-up">+</button>
+      <button class="btn btn-success"  id="temperature-up">+</button>
       <button class="btn btn-danger" id="temperature-down">-</button>
       <button class="btn btn-primary" id="temperature-reset">reset</button>
       power saving mode is <span id="power-saving-status">on</span>
