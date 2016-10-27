@@ -15,30 +15,41 @@
 <body>
   <section class = 'text-center'>
     <div class = 'transparent-box'>
-    <p class="text-danger">
-      Please select your home-town
-    </p>
-    <select class="text-primary" id="current-city">
-      <option value ="london">London</option>
-      <option value ="newyork">New York</option>
-      <option value ="paris">Paris</option>
-      <option value ="tokyo">Tokyo</option>
-      <option value ="florence">Florence</option>
-    </select>
+      <p class="text-danger">
+        Please select your home-town
+      </p>
+      <select class="text-primary" id="current-city">
+        <option value ="london">London</option>
+        <option value ="newyork">New York</option>
+        <option value ="paris">Paris</option>
+        <option value ="tokyo">Tokyo</option>
+        <option value ="florence">Florence</option>
+      </select>
 
-    <h2 class="text-danger">Current temperature: <span id = 'current-temperature'></span></h2>
-
-    <h1 class="text-center text-danger" id="temperature"></h1>
-
-    <div class="text-center text-danger">
-      <div class = "buttons-div"><button class="btn btn-success"  id="temperature-up">+</button>
-      <button class="btn btn-danger" id="temperature-down">-</button></div>
-
-      <div><button class="btn btn-primary" id="temperature-reset">Reset</button></div>
-      Power saving mode is <span id="power-saving-status">on</span>
-      <div><button class="btn btn-warning" id="powersaving-toggle">Toggle PSM</button></div>
+      <h2 class="text-danger">Current temperature: <span id = 'current-temperature'></span></h2>
     </div>
-  </div>
+    
+    <div class = 'transparent-box'>
+
+      <h1 class="text-center text-danger" id="temperature"></h1>
+
+      <div class="text-center text-danger">
+        <div class = "buttons-div">
+          <button class="btn btn-primary" id="temperature-down">-</button>
+          <button class="btn btn-success"  id="temperature-up">+</button>
+        </div>
+
+        <div>
+          <button class="btn btn-danger" id="temperature-reset">Reset</button>
+        </div>
+
+        <p class="text-danger"> Power saving mode is <span id="power-saving-status">on</span> </p>
+
+        <div><button class="btn btn-warning" id="powersaving-toggle">Power Saving</button>
+      </div>
+
+    </div>
+
   </section>
 </body>
 </html>
