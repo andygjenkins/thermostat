@@ -1,6 +1,5 @@
 $(document).ready(function() {
 
-
   var thermostat = new Thermostat();
   function updateTemperature() {
     $('#temperature').text(thermostat.temperature);
@@ -32,4 +31,9 @@ $(document).ready(function() {
     thermostat.togglePowerSavingMode();
     updateTemperature();
   });
+
+  $.get('http://api.openweathermap.org/data/2.5/weather?q=London,uk&appid=64f745ba72497d79c7328f9cdc4dfa53&units=metric', function(data) {
+    $('#current-temperature').text(data.main.temp);
+  });
+  
 });
