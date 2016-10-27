@@ -1,9 +1,43 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #FFF;
+  line-height: 2.5em;
+  background-color: #0D1754;
+  font-size: 1em;
+  margin:0 auto;
+  max-width: 600px;
+}
+
+button {
+  font-family: 'Open Sans', sans-serif;
+  color: #FFF;
+  font-size: 1em;
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer;
+  overflow: hidden;
+  outline:none;
+}
+
+
+.button-size{
+  Font-size: 3em;
+}
+
+
+#currentTemperature {
+  font-size: 4em;
+
+}
+
+
 .lowIntensity {
   color: green;
 }
 
 .medIntensity {
-  color: blue;
+  color: #FFE045;
 }
 
 .highIntensity {
