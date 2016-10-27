@@ -1,22 +1,20 @@
-!<DOCTYPE html>
+<!DOCTYPE html>
 <html>
-<head>
-  Thermostat
-</head>
-<body>
-<h1> Thermostat! </h1>
-  <div id="currentTemperature">
-    idCurrent Temperature
-  </div>
-  <div id="powerSaveMode">
-  </div>
-  <form action="/" method="post">
-      <button id="increaseTemp">+</button>
-      <button id="decreaseTemp">-</button>
-      <button id="resetTemp">reset</button>
-      power saving mode is <span id="powerSaveMode"
-      <button id="powerSaveModeOn">
-      <button id="powerSaveModeOff">
-  </form>
-</body>
+  <head>
+    <title>Thermostat</title>
+  </head>
+  <body>
+    <section>
+      <h1 id="currentTemperature"></h1>
+      <p>
+        <button id="increaseTemp">+</button>
+        <button id="decreaseTemp">-</button>
+        <button id="resetTemp">reset</button>
+        power saving mode is <span id="powerSaveMode">on</span>
+        <button id="powerSaveModeOn">PSM on</button>
+        <button id="powerSaveModeOff">PSM off</button>
+      </p>
+    </section>
+  <script src="src/thermostat.js"></script>
+  </body>
 </html>

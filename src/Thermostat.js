@@ -1,11 +1,11 @@
 'use strict';
 
 function Thermostat(){
-  this.MIN_TEMPERATURE = 10
-  this.MAX_TEMPERATURE = 32
-  this.DEFAULT_TEMPERATURE = 20
-  this.powerSaveMode = true
-  this.currentTemperature = this.DEFAULT_TEMPERATURE
+  this.MIN_TEMPERATURE = 10;
+  this.MAX_TEMPERATURE = 32;
+  this.DEFAULT_TEMPERATURE = 20;
+  this.powerSaveMode = true;
+  this.currentTemperature = this.DEFAULT_TEMPERATURE;
 }
 
 Thermostat.prototype.getCurrentTemp = function(){
