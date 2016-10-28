@@ -9,6 +9,7 @@ gem 'data_mapper'
 gem 'database_cleaner'
 gem 'rake'
 gem 'sinatra-flash'
+gem 'rerun'
 
 
 group :test do
