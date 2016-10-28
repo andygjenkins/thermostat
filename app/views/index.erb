@@ -18,13 +18,16 @@
       <p class="text-danger">
         Please select your home-town
       </p>
-      <select class="text-primary" id="current-city">
-        <option value ="london">London</option>
-        <option value ="newyork">New York</option>
-        <option value ="paris">Paris</option>
-        <option value ="tokyo">Tokyo</option>
-        <option value ="florence">Florence</option>
-      </select>
+      <form action = "/settings" method="post">
+        <select name="city" class="text-primary" id="current-city">
+          <option value ="london">London</option>
+          <option value ="newyork">New York</option>
+          <option value ="paris">Paris</option>
+          <option value ="tokyo">Tokyo</option>
+          <option value ="florence">Florence</option>
+        </select>
+        <button class="btn btn-primary" id="temperature-down">Submit</button>
+      </form>
 
       <h2 class="text-danger">Current temperature: <span id = 'current-temperature'></span></h2>
     </div>
@@ -45,8 +48,11 @@
 
         <p class="text-danger"> Power saving mode is <span id="power-saving-status">on</span> </p>
 
-        <div><button class="btn btn-warning" id="powersaving-toggle">Power Saving</button>
-      </div>
+        <div>
+          <form action = "/settings" method="post">
+            <button class="btn btn-warning" id="powersaving-toggle">Power Saving</button>
+          </form>
+        </div>
 
     </div>
 
