@@ -2,27 +2,23 @@ ENV['RACK_ENV'] = 'development'
 
 require_relative 'data_mapper_setup'
 require 'sinatra/base'
+require 'json'
 
 class Thermostat < Sinatra::Base
+
+  enable :sessions
 
   get '/' do
     erb :index
   end
 
   post "/settings" do
-    Settings.all.destroy
-    Settings.create(
-    # temperature: params[],
-                              city: params[:city],
-                              # power_saving_mode: params[]
-                              )
-    redirect "/"
+    session[:city] = params[:city]
+    redirect '/settings'                    )
   end
 
   get "/settings" do
-    # settings = Settings.last {
-    #   city: settings.city
-    # }
+    JSON.generate({city: session[:city]})
   end
 
 
